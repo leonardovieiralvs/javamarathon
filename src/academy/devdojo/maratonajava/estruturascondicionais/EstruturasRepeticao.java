@@ -20,8 +20,26 @@ public class EstruturasRepeticao {
 
         System.out.println("###################");
 
-        for (int i = 0; i < 5; i++) {
-            System.out.println(i);
+
+        double totalValue = 30000;
+
+        for (int parcela = 1; parcela < totalValue; parcela++) {
+            double valorParcela = totalValue / parcela;
+            if (valorParcela < 1000) {
+                break;
+            }
+            System.out.println("Parcela " + parcela + " R$" + valorParcela);
+        }
+
+        System.out.println("###################");
+
+        for (int parcela = (int) totalValue; parcela >= 1; parcela--) {
+            double valorParcela = totalValue / parcela;
+            if (valorParcela < 1000) {
+                continue;
+            }
+            System.out.println("Parcela "+parcela+ " - R$"+valorParcela);
+
         }
     }
 }
