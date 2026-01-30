@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.estruturascondicionais;
+package academy.devdojo.maratonajava.introducao;
 
 public class Arrays02 {
     public static void main(String[] args) {
